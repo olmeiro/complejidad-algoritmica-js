@@ -190,3 +190,11 @@ myDoubleLinkedList.appendCycle(4, 2)
 console.log(myDoubleLinkedList.hasCycle());
 console.log(myDoubleLinkedList.hasCycle2());
 // console.log(myDoubleLinkedList.toString()) entra en el ciclo de impresión
+
+/* The code above does the following, explained in English:
+1. We create a variable called current and assign it to the head of the linked list.
+2. We create a variable called linkedList and assign it to the string value of the head node.
+3. We create a while loop that will run as long as there is a next node in the list.
+4. Inside of the while loop, we assign current to the next node in the list.
+5. Inside of the while loop, we append the value of the next node to the linkedList variable.
+6. Outside of the while loop, we return the linkedList variable. */

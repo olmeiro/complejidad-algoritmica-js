@@ -25,3 +25,17 @@ class Solution:
                nodoActual.val, nodoActual.next.val = nodoActual.next.val, nodoActual.val
                nodoActual = nodoActual.next.next
        return cabeza
+   
+   """ This is an example for calling this function: """
+nodo1 = ListNode(1)
+nodo2 = ListNode(2)
+nodo3 = ListNode(3)
+nodo4 = ListNode(4)
+nodo1.next = nodo2
+nodo2.next = nodo3
+nodo3.next = nodo4
+nodo4.next = None
+
+sol = Solution()
+sol.swapPairs(nodo1) 
+print(nodo1.val, nodo1.next.val, nodo1.next.next.val, nodo1.next.next.next.val)
