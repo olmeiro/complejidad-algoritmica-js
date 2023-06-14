@@ -7,6 +7,7 @@ def numeroDeIslas(mapa) -> int:
             dfs(i+1,j) #+derecha
             dfs(i,j-1) #+abajo
             dfs(i,j+1) #+arriba
+            #dfs(i+1,j+1) #diagonal -> reduce el resultado
     
     cantidadIslas = 0
     for i in range(len(mapa)): #itero sobre el mapa

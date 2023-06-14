@@ -32,3 +32,11 @@ function invertString(s){
 
 console.log(invertString(["h", "a", "n", "n", "a", "H"]))
 console.log(invertString(["h", "e", "l", "l", "o"]))
+
+/* Here is the explanation for the code above:
+1. We have two pointers that will be moving towards the middle of the array from the left and from the right.
+2. We have a mid point that will be used to know when to stop the loop.
+3. We will be using a while loop that will stop when the left pointer is equal to the mid point.
+4. Inside the while loop we will be swapping the characters at the pointers position.
+5. We will also be incrementing the left pointer and decrementing the right pointer.
+6. Finally we will be returning the array. */

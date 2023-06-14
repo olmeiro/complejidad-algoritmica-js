@@ -18,3 +18,9 @@ def trappingRainWater(alturas):
     return aguaRecolectada
 
 print(trappingRainWater(alturas));
+""" Here is the explanation for the code above:
+1. We start traversing the array from the leftmost element.
+2. Find the largest element on its left (maxLeft).
+3. Find the largest element on its right (maxRight).
+4. The amount of water that can be stored in this column is min(maxLeft, maxRight) – arr[i] (amount of water that can be stored in this column).
+5. Finally, we return the sum of water that can be stored in all columns. """

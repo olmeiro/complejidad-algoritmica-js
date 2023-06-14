@@ -34,3 +34,14 @@ class Solution:
        if lleva:
            nodoActual.next = ListNode(lleva)
        return cabezaTemporal.next
+   
+   """ This is an example for calling this function:"""
+nodo1 = ListNode(2)
+nodo1.next = ListNode(4)
+nodo1.next.next = ListNode(3)
+
+nodo2 = ListNode(5)
+nodo2.next = ListNode(6)
+nodo2.next.next = ListNode(4)
+
+print(Solution().sumarDosNumeros(nodo1, nodo2)) 

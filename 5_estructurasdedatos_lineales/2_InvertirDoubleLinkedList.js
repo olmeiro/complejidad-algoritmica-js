@@ -147,3 +147,15 @@ console.log(myDoubleLinkedList.toString())
 
 myDoubleLinkedList.oddEventList()
 console.log(myDoubleLinkedList.toString())
+
+/* The code above does the following, explained in English:
+1. If the head is null or the head.next is null, return the head;
+2. Initialize odd as head and even as head.next. The reason for this is that the odd pointer will point to the odd nodes while the even pointer will point to the even nodes.
+3. Initialize headEven as even. This will be used to connect the odd nodes to the even nodes later.
+4. While even is not null and even.next is not null, keep looping.
+5. Assign odd.next to even.next. This will connect the odd nodes together.
+6. Assign odd to odd.next. This will move the odd pointer forward.
+7. Assign even.next to odd.next. This will connect the even nodes together.
+8. Assign even to even.next. This will move the even pointer forward.
+9. Connect odd to headEven. This will connect the odd nodes to the even nodes.
+10. Return head. */
