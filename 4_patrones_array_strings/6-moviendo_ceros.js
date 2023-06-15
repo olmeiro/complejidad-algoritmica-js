@@ -50,3 +50,12 @@ function moveZeros(nums) {
 
 nums1 = [0, 1, 0, 3, 12];
 console.log(moveZeros(nums1))
+
+/* Here is the explanation for the code above:
+1. We keep two pointers i and j, where i is the slow-runner while j is the fast-runner.
+
+2. As long as nums[j] = 0, we increment j to skip all the zeros.
+
+3. When we encounter a non-zero element nums[j], we swap nums[i] and nums[j], then increment i so that now nums[i] = 0.
+
+4. We repeat the process until j reaches the end of array nums. */
