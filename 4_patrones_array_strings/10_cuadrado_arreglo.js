@@ -35,7 +35,29 @@ function squareSort(nums){
   return a; //O(1)
   
 }
+
+function squareSortOption(nums){
+  let p1 = 0;
+  let p2 = nums.length - 1;
+  respuesta = new Array(nums.length).fill(0);
+  p_respuesta = nums.length - 1;
+
+  while (p_respuesta >= 0){
+    if(Math.abs(nums[p1]) > Math.abs(nums[p2])){
+      respuesta[p_respuesta] = nums[p1] ** 2;
+      p1++;
+      p_respuesta--;
+    } else {
+      respuesta[p_respuesta] = nums[p2] ** 2;
+      p2--;
+      p_respuesta--;
+    }
+  }
+  return respuesta;
+}
+
 const numeros = [-4, -1, 0, 3, 10];
-console.log(squareSort(numeros))
+// console.log(squareSort(numeros))
 const nums = [-7, -3, 2, 3, 11]
-console.log(squareSort(nums))
+// console.log(squareSort(nums))
+console.log(squareSortOption(nums))

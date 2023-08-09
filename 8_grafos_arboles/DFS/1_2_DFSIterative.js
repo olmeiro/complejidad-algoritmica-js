@@ -13,6 +13,7 @@ const dfs = (node, value) => {
   let visited = new Array(Object.keys(graphAdj).length).fill(false);
 
   stack.push(node);
+  console.log(stack)
   while (stack.length > 0) {
     node = stack.pop();
     if (visited[node] === false) {
